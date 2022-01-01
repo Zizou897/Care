@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.btn{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.btn img{
+    height: 100%;
+}
+
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+   
+}
+
+
+form{
+   
+    margin-top: 10px;
+    background-color:#dddddd;
+    border-radius: 10px;
+    min-width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.block{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+form h1{
+    color: #69bde7;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form .social-media{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+form .social-media p{
+    padding:5px;
+    margin-left: 10px;
+    border: 1px solid gray;
+    border-radius:100% ;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+form p.choose-email{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+form .inputs{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+form .inputs input{
+    height: 60px;
+    padding: 14px;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 6px;
+    border: none;
+    background-color: #f2f2f2;
+    margin-bottom: 16px;
+    outline: none;
+}
+
+form p.inscription{
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #878787;
+}
+
+
+form p.inscription span, a{
+    color:#69bde7 ;
+    text-decoration: none;
+}
+
+form button{
+    padding: 15px 25px;
+    border-radius:5px ;
+    height: 60px;
+    font-size: 1.2em;
+    border: none;
+    background-color:#69bde7 ;
+    outline: none;
+    cursor: pointer;
+}
+
+/* responsivité */
+
+@media (max-width:850px){
+    form, .block{
+        background-color: white;
+        width: 50%;
+    }
+}
+
+@media (max-width:350px){
+    form, .block{
+        background-color: white;
+        width: 40%;
+    }
+}

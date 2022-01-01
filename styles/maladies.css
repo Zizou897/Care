@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+section {
+    padding: 40px 0;
+    margin-top: 15px;
+}
+
+
+/*--------- button recherche -------*/
+
+.search-box {
+    position: absolute;
+    height: 50px;
+    border-radius: 40px;
+    padding: 10px;
+    background: #d1d9df60;
+    display: flex;
+    align-items: center;
+    left: 40px;
+    margin-top: 15px;
+}
+
+.search-box:hover>.search-txt {
+    width: 200px;
+    padding: 0 6px;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    font-size: 16px;
+    line-height: 30px;
+    width: 0px;
+    transition: 1.5s;
+}
+
+.search-btn {
+    height: 40px;
+    width: 40px;
+    float: right;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    background: rgba(38, 77, 124, 0.227);
+}
+
+.search-btn i {
+    position: relative;
+    left: 12px;
+    text-decoration: none;
+    color: rgb(22, 85, 128);
+}
+
+
+/* -------- contenu de la page maladie --------*/
+
+.maladie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.062);
+}
+
+.picture {
+    width: 30vw;
+    padding: 35px 20px;
+}
+
+.picture img {
+    width: 100%;
+}
+
+.container {
+    width: 300px;
+    margin-left: 30px;
+}
+
+.container h2 {
+    margin-bottom: 1.5rem;
+    color: rgb(153, 51, 0);
+}
+
+.container p {
+    color: rgb(51, 51, 51)
+}
+
+@media all and (max-width:950px) {
+    .picture,
+    .container {
+        width: 60vw;
+    }
+    .container>a>h2 {
+        font-size: 1.4rem;
+    }
+}
+
+
+/* -------contenu News de la page maladies -------- */
+
+.featured-news {
+    display: flex;
+    align-items: center;
+    margin: 25px;
+}
+
+.box-news {
+    width: 300px;
+    height: 350px;
+    background-color: whitesmoke;
+    margin: 0 7px;
+    border-radius: 10px;
+}
+
+.reduire {
+    width: 100%;
+    height: 57%;
+}
+
+.box-news a:hover,
+.container h2:hover {
+    text-decoration: underline;
+}
+
+.box-news img {
+    border-radius: 10px 10px 0 0;
+}
+
+.box-news h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+/*----- Responsivité News -------*/
+
+@media all and (max-width:950px) {
+    .featured-news {
+        flex-direction: column;
+        width: 100vw;
+        margin: auto;
+        align-items: center;
+    }
+    .box-news {
+        margin: 10px 0;
+    }
+    .box-news img {
+        width: 100%;
+    }
+}
+
+
+/* -------contenu Publication de la page maladies -------- */
+
+.box-publ {
+    width: 100vw;
+    background-color: whitesmoke;
+    padding: 20px 0;
+}
+
+.titre {
+    width: 95vw;
+    padding: 30px;
+}
+
+.titre h1 {
+    padding: 15px 30px;
+    font-size: 50px;
+    border-bottom: 1px solid rgba(17, 16, 16, 0.603);
+}
+
+.publ {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 45px;
+}
+
+.publ img {
+    flex: 20%;
+    width: 389px;
+    height: 552px;
+}
+
+.publ div {
+    width: 50%;
+    flex: 60%;
+    margin: 0 45px;
+}
+
+.publ div h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    width: 40vw;
+    color: rgb(153, 51, 0);
+}
+
+.publ div p {
+    width: 50vw;
+    font-size: 17px;
+    margin-top: 30px;
+    text-align: justify;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+}
+
+main {
+    min-height: 60vh;
+    width: 100vw;
+}
+
+.article {
+    padding: 50px;
+    width: 60vw;
+    position: relative;
+    left: 20%;
+}
+
+.article h1 {
+    font-size: 70px;
+    margin-bottom: 3%;
+}
+
+.article p {
+    margin-bottom: 2%;
+    text-align: justify;
+}
+
+@media all and (max-width:950px) {
+    .publ,
+    .publ div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .publ img {
+        width: 50vw;
+    }
+    .publ div {
+        width: 30%;
+    }
+    .publ div h2 {
+        width: 50vw;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 40px;
+    }
+    .publ div p {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+}
+
+.box-pub2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.pub2 {
+    width: 20vw;
+    height: 50vh;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.062);
+    transition: .7s;
+}
+
+.pub2:hover {
+    transform: scale(1.1);
+}
+
+.pub2 img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.pub2 a {
+    font-size: 18px;
+    position: relative;
+    top: 7%;
+    color: rgb(8, 58, 114);
+    font-weight: bold;
+}
+
+.pub2 a:hover {
+    color: rgb(153, 51, 0);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+/*---------- responsivité de la page maladie --------*/
+
+@media all and (max-width:950px) {
+    .box-maladies,
+    .maladie {
+        flex-direction: column;
+        width: 100vw;
+        margin: auto;
+        align-items: center;
+    }
+    .titre h1 {
+        margin: 20px;
+        font-size: 40px;
+        border-bottom: 1px solid rgb(202, 200, 200);
+    }
+}
